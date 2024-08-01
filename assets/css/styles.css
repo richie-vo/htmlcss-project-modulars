@@ -146,13 +146,17 @@ a {
     margin-left: 88px;
 }
 /* ======================== HERO ======================== */
+.hero {
+    padding: 60px 0 80px;
+}
+
 .hero-body {
     display: flex;
     justify-content: space-between;
 }
 
 .hero-content {
-    padding-top: 103px;
+    margin-top: 43px;
     width: 35%;
 }
 
@@ -242,13 +246,15 @@ a {
 
 .hero-media {
     position: relative;
-    width: 100%;
+    width: 646px;
+    height: 543px;
+    flex-shrink: 0;
 }
 
 .hero-media__bg {
     position: absolute;
-    top: 182px;
-    right: 175px;
+    top: 122px;
+    right: 150px;
     width: 340px;
     height: 340px;
     border-radius: 50%;
@@ -261,7 +267,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    top: 60px;
+    top: 0;
     right: 25px;
 }
 
@@ -274,4 +280,55 @@ a {
 
 .hero-media__img:nth-child(2) {
     margin-top: 77px;
+}
+/* ======================== BRANDS ======================== */
+.brands {
+    margin-top: 50px;
+}
+
+.brands-body {
+    padding: 0 121px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 201px;
+    border-radius: 100.5px;
+    background: #e2eddf;
+    color: var(--primary-color-black-green);
+}
+
+.brands__google {
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.brands__slack {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.brands__discord {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.brands__riotinto {
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.brands__heroku {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
 }
