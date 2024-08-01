@@ -628,3 +628,119 @@ a {
     font-weight: 500;
     line-height: 171.429%;
 }
+/* ======================== PROCESS ======================== */
+.process {
+    margin-top: 200px;
+    padding: 36px 0 148px;
+}
+
+.process__heading {
+    position: relative;
+    margin-top: 20px;
+    width: 477px;
+}
+
+.process__heading::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 84px;
+    right: -9px;
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color-black);
+}
+
+.process-list {
+    margin-top: 81px;
+}
+
+.process-item {
+    position: relative;
+    height: 185px;
+    display: flex;
+    align-items: center;
+    padding: 21px 41px 21px 20px;
+    transition: ease-in 0.25s;
+}
+
+.process-item::after {
+    position: absolute;
+    content: "";
+    width: 1131px;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+}
+
+.process-item:hover {
+    border-radius: 33px;
+    background: #e2eddf;
+}
+
+.process-item:hover::after {
+    background: transparent;
+}
+
+.process-item:hover .process-item__img {
+    display: inline-block;
+}
+
+.process-item:hover .process-item__more {
+    display: inline-block;
+    top: 22px;
+}
+
+.process-item__img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+    transition: ease-in 0.25s;
+}
+
+.process-item__index {
+    min-width: 109px;
+    color: var(--primary-color-black-green);
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 72.222%;
+}
+
+.process-item__column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+}
+
+.process-item__heading {
+    color: var(--primary-color-black);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.process-item__more {
+    position: relative;
+    display: none;
+    text-decoration: underline;
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    transition: ease-in 0.25s;
+}
+
+.process-item__desc {
+    margin-left: auto;
+    margin-right: 0;
+    width: 572px;
+    color: #7d8188;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 155.556%;
+}
