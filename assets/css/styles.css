@@ -72,6 +72,26 @@ a {
     font-weight: 500;
     line-height: 162.5%;
 }
+
+.section-title {
+    position: relative;
+    padding-left: 46px;
+    color: var(--primary-color-black);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 162.5%;
+}
+
+.section-title::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 9px;
+    left: 0;
+    width: 25px;
+    height: 1px;
+    background: var(--primary-color-black);
+}
 /* ======================== HEADER ======================== */
 .header {
     margin-top: 28px;
@@ -341,26 +361,6 @@ a {
     margin-top: 106px;
 }
 
-.services__title {
-    position: relative;
-    padding-left: 46px;
-    color: var(--primary-color-black);
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 162.5%;
-}
-
-.services__title::before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    top: 9px;
-    left: 0;
-    width: 25px;
-    height: 1px;
-    background: var(--primary-color-black);
-}
-
 .services-row {
     display: flex;
     justify-content: space-between;
@@ -456,6 +456,173 @@ a {
 
 .services-item__desc {
     margin-top: 18px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 171.429%;
+}
+/* ======================== ABOUT ======================== */
+.about {
+    margin-top: 150px;
+}
+
+.about-body {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+}
+
+.about-media {
+    position: relative;
+}
+
+.about-img {
+    width: 286px;
+    height: 480px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 210px;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about-img:first-child {
+    position: absolute;
+    left: 0;
+    top: 90px;
+}
+
+.about-img:nth-child(2) {
+    position: absolute;
+    left: 305px;
+    top: 13px;
+}
+
+.stats {
+    position: absolute;
+    left: 457px;
+    top: 418px;
+    width: 143px;
+    height: 144px;
+    padding: 19px 23px 11px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+    font-family: "Public Sans", sans-serif;
+}
+
+.stats__heading {
+    color: var(--primary-color-black);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.stats__desc {
+    margin-top: 6px;
+    display: block;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.stats__num,
+.stats__load,
+.stats__team {
+    color: var(--primary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.stats__num {
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.stats__num::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 96px;
+    height: 2px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.stats__num::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 2px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #83a17d;
+    z-index: 1;
+}
+
+.stats__load {
+    margin-top: 3px;
+    display: block;
+    text-align: end;
+}
+
+.stats__dot {
+    margin-top: 3px;
+    margin-left: -4px;
+}
+
+.stats__row {
+    margin-top: 4px;
+    margin-left: -6px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.stats__avatars {
+    display: flex;
+    align-items: center;
+}
+
+.stats__avatar {
+    object-fit: cover;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    flex-shrink: 0;
+}
+
+.stats__avatar:not(:first-child) {
+    margin-left: -6px;
+}
+
+.about__heading {
+    margin-top: 20px;
+}
+
+.about__desc {
+    margin-top: 11px;
+}
+
+.about-content__row {
+    margin-top: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #83a17d;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-content__row-text {
+    width: 364px;
     color: #7d8188;
     font-size: 1.4rem;
     font-weight: 500;
